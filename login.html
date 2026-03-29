@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elitewear Login</title>
+
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #c7aeaf, #83726d); /* soft pink gradient */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    color: #333; /* dark text for readability */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1c1f0c; /* rose gold tone */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+    box-shadow: 0 0 5px #b76e79; /* matching accent */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #6b5b5d; /* rose gold */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #141010;
+    transform: scale(1.05);
+}
+
+.link {
+    margin-top: 15px;
+    cursor: pointer;
+    color: #0c0c4e;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <img src="logo.jpeg" alt="Elitewear Logo">
+    </div>
+
+    <h2>Welcome to EliteWear 🔐</h2>
+
+    <input type="text" id="loginUser" placeholder="Username">
+    <input type="password" id="loginPass" placeholder="Password">
+
+    <button class="btn" onclick="login()">Login</button>
+
+    <p onclick="location.href='signup.html'" class="link">
+        Create New Account
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

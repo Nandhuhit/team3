@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - EliteWear</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: white;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 120px;
+            margin-top: 20px;
+        }
+
+        header {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: auto;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .info {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #ffd700;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="logo">
+    <img src="logo.jpeg" alt="EliteWear Logo">
+</div>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h2>Get In Touch 💌</h2>
+
+    <div class="info">📧 elitewear@fashion.com</div>
+    <div class="info">📸 Instagram: @elitewear</div>
+    <div class="info">📞 +91 9876543210</div>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+
+    <button class="btn" onclick="sendMessage()">Send Message</button>
+
+    <div class="footer">We’ll get back to you within 24 hours ✨</div>
+
+</div>
+
+<script>
+function sendMessage(){
+    alert("Message sent successfully 💌");
+}
+</script>
+
+</body>
+</html>

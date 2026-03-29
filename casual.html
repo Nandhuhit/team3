@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Women's Casual Wear</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 10px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 0 10px gray;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background: black;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #444;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Women's Collection 👗</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="collections.html">Collections</a>
+    </nav>
+</header>
+
+<section>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1520975922203-bf45f7d7e4a9">
+    <h3>Summer Dress</h3>
+    <p>₹1200</p>
+    <button class="btn" onclick="buyNow('Summer Dress',1200)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+    <h3>Denim Outfit</h3>
+    <p>₹1500</p>
+    <button class="btn" onclick="buyNow('Denim Outfit',1500)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+    <h3>Casual Kurti</h3>
+    <p>₹999</p>
+    <button class="btn" onclick="buyNow('Casual Kurti',999)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+    <h3>Floral Dress</h3>
+    <p>₹1399</p>
+    <button class="btn" onclick="buyNow('Floral Dress',1399)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+    <h3>Casual Outfit</h3>
+    <p>₹899</p>
+    <button class="btn" onclick="buyNow('Casual Outfit',899)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+    <h3>Evening Gown</h3>
+    <p>₹2499</p>
+    <button class="btn" onclick="buyNow('Evening Gown',2499)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a0e">
+    <h3>Office Wear</h3>
+    <p>₹1799</p>
+    <button class="btn" onclick="buyNow('Office Wear',1799)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956">
+    <h3>Maxi Dress</h3>
+    <p>₹1999</p>
+    <button class="btn" onclick="buyNow('Maxi Dress',1999)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1542060748-10c28b62716f">
+    <h3>Party Wear</h3>
+    <p>₹2200</p>
+    <button class="btn" onclick="buyNow('Party Wear',2200)">Buy Now</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1520975778577-9c4bbd7c5e87">
+    <h3>Kurti Set</h3>
+    <p>₹1299</p>
+    <button class="btn" onclick="buyNow('Kurti Set',1299)">Buy Now</button>
+</div>
+
+</section>
+
+<div style="text-align:center; margin:30px;">
+    <button class="btn" onclick="location.href='index.html'">⬅ Back Home</button>
+</div>
+
+<script>
+function buyNow(name, price){
+    localStorage.setItem("totalAmount", price);
+    window.location.href = "payment.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Collection</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #fbd3e9, #bbd2c5);
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 10px;
+            width: 200px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #ff4081;
+            font-weight: bold;
+        }
+
+        .btn {
+            background: #ff4081;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e91e63;
+        }
+
+        .back-btn {
+            margin: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h2>Kids Collection 👶🧸</h2>
+
+<div class="products">
+
+<!-- 1 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea">
+    <p>Kids Party Dress</p>
+    <p class="price">₹799</p>
+    <button class="btn" onclick="buyNow(799)">Buy Now</button>
+</div>
+
+<!-- 2 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9">
+    <p>Casual Kids Wear</p>
+    <p class="price">₹599</p>
+    <button class="btn" onclick="buyNow(599)">Buy Now</button>
+</div>
+
+<!-- 3 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4">
+    <p>Summer Dress</p>
+    <p class="price">₹699</p>
+    <button class="btn" onclick="buyNow(699)">Buy Now</button>
+</div>
+
+<!-- 4 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f">
+    <p>Baby Outfit</p>
+    <p class="price">₹499</p>
+    <button class="btn" onclick="buyNow(499)">Buy Now</button>
+</div>
+
+<!-- 5 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+    <p>Kids Hoodie</p>
+    <p class="price">₹899</p>
+    <button class="btn" onclick="buyNow(899)">Buy Now</button>
+</div>
+
+<!-- 6 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1520975778577-9c4bbd7c5e87">
+    <p>Stylish Frock</p>
+    <p class="price">₹999</p>
+    <button class="btn" onclick="buyNow(999)">Buy Now</button>
+</div>
+
+<!-- 7 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb">
+    <p>Denim Kids Outfit</p>
+    <p class="price">₹1099</p>
+    <button class="btn" onclick="buyNow(1099)">Buy Now</button>
+</div>
+
+<!-- 8 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1520975922203-bf45f7d7e4a9">
+    <p>Kids T-shirt Set</p>
+    <p class="price">₹799</p>
+    <button class="btn" onclick="buyNow(799)">Buy Now</button>
+</div>
+
+<!-- 9 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1542060748-10c28b62716f">
+    <p>Party Wear</p>
+    <p class="price">₹1299</p>
+    <button class="btn" onclick="buyNow(1299)">Buy Now</button>
+</div>
+
+<!-- 10 -->
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a0e">
+    <p>Kids Ethnic Wear</p>
+    <p class="price">₹1499</p>
+    <button class="btn" onclick="buyNow(1499)">Buy Now</button>
+</div>
+
+</div>
+
+<div class="back-btn">
+    <button class="btn" onclick="location.href='index.html'">⬅ Back Home</button>
+</div>
+
+<script>
+function buyNow(price){
+    localStorage.setItem("totalAmount", price);
+    window.location.href = "payment.html";
+}
+</script>
+
+</body>
+</html>
